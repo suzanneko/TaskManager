@@ -78,15 +78,32 @@ All users may view all tasks. All the tasks in 'tasks.txt' are displayed in a us
 <img width="611" alt="image" src="https://user-images.githubusercontent.com/121255678/217808966-0341b968-1c20-42ac-b9e8-3959690cc6ef.png">
 
 ##### gr - Generate Reports
-Only the admin user is presented with this option in their menu. 
+Only the admin user is presented with this option in their menu.  The 'generate_reports' function generates 2 reports in text files named 'task_overview' and 'user_overview'. 
+
+###### task_overview.txt
+The 'task_overview' report gives statistics on the total number of tasks, the number of completed, uncompleted, and uncompleted and overdue tasks.
+
+<img width="707" alt="image" src="https://user-images.githubusercontent.com/121255678/217853220-a858eff1-fcfb-4c1e-baac-3f4faf8e0343.png">
+
+###### user_overview.txt
+The 'user_overview' report gives statistics for each user on the total number of tasks assigned to the user, as well as the percentage of completed, uncompleted and overdue tasks.
+
+<img width="758" alt="image" src="https://user-images.githubusercontent.com/121255678/217853086-e78305f5-f598-4cb0-8a9b-af30f63f775f.png">
 
 ##### vm - View my task
 
-This option displays the tasks assigned to the user that is logged in.
+The 'view_mine' function displays the tasks assigned to the user who is logged in. It displays tasks with a task number and the user may then select the task to edit it. If a task is selected, they are given the option to mark the task as completed or edit the task if the task status is showing it is not complete. If they choose to edit the task, they may choose between changing the due date of the task or the person the task is assigned to.  All changes are written to the original 'tasks.txt' file.
 
-<img width="596" alt="image" src="https://user-images.githubusercontent.com/121255678/217850905-5bff7411-6195-498e-a24f-133f13e6b303.png">
-    
+<img width="580" alt="image" src="https://user-images.githubusercontent.com/121255678/217851614-ea3807ee-f5f7-4a37-8abe-9152c8d56019.png">
+
 ##### s - Display statistics
+
+#The 'statistics' function checks whether the 'task_overview.txt' file exists. If it does, the data is read and printed from the task_overview.txt' and 'user_overview.txt' files.
+
+<img width="727" alt="image" src="https://user-images.githubusercontent.com/121255678/217853382-f31baee4-0886-42f4-98d5-f7ad5270c9a9.png">
+
+<img width="697" alt="image" src="https://user-images.githubusercontent.com/121255678/217853552-dd68f9ea-cfe1-43be-8f7c-ed967f23df7a.png">
+
     
 ### Credits
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
