@@ -65,13 +65,17 @@ If the passwords do not match, an error message is printed, asking the user to t
 <img width="238" alt="image" src="https://user-images.githubusercontent.com/121255678/217796977-23fa0adf-1182-496d-a580-2bc6ebddfb97.png">
 
 ##### a - add a task
-All users may add a task. The user is prompted to enter: the username of the person the task is assigned to, the task title, the task description and the date the task is due.
+All users may add a task. The user is prompted to enter: the username of the person the task is assigned to, the task title, the task description and the date the task is due. The 'tasks.txt' file is updated with the new task.
 
 <img width="488" alt="image" src="https://user-images.githubusercontent.com/121255678/217798884-7a28119d-b875-4ca8-a23b-f6bd4997a5eb.png">
 
 ##### va - View all tasks
+All users may view all tasks. All the tasks in 'tasks.txt' are displayed in a user-friendly format as shown in the image below:
+
+<img width="611" alt="image" src="https://user-images.githubusercontent.com/121255678/217808966-0341b968-1c20-42ac-b9e8-3959690cc6ef.png">
 
 ##### gr - Generate Reports
+Only the admin user is presented with this option in their menu. 
 
 ##### vm - View my task
     
