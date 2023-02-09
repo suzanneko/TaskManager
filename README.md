@@ -51,9 +51,11 @@ When the program is initiated, user authentification is commenced. The user is a
 Following successful authentification, the user is presented with a menu from which to select an option.  The menu presented to admin displays two options that are not given to other users: 'Generate Reports' and 'Statistics'. 
 
 Admin menu:
+
 <img width="270" alt="image" src="https://user-images.githubusercontent.com/121255678/217797870-026cb500-85bc-4ea1-9ab1-9c0305a3f4ee.png">
 
 Menu for all other users:
+
 <img width="217" alt="image" src="https://user-images.githubusercontent.com/121255678/217798070-0c91586e-b22b-4599-97c7-aeccdbd5174d.png">
 
 ##### r - registering a user
