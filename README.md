@@ -6,20 +6,23 @@
 This project was built with the goal of providing businesses with a task management system that reads and writes to two external files, the first listing user and password information, and the second listing task information.  Users are required to login with a username and password and view a menu of options, including adding tasks and viewing tasks.  The system enables administrator login which allows additional functionality, including registering new users and viewing statistics on the number of users and tasks. 
 
 ### Table of contents 
-- [finalCapstone](#finalcapstone)
-  * [Title: inventory.py](#title--inventorypy)
+- [TaskManager](#taskmanager)
+  * [Title: task_manager.py](#title--task-managerpy)
     + [Description](#description)
     + [Table of contents](#table-of-contents)
     + [How to install](#how-to-install)
     + [How to use](#how-to-use)
       - [Data source](#data-source)
+        * [tasks.txt](#taskstxt)
+        * [users.txt](#userstxt)
+      - [Login](#login)
       - [Menu](#menu)
-        * [1 - View all shoes](#1---view-all-shoes)
-        * [2 - Enter a new shoe](#2---enter-a-new-shoe)
-        * [3 - Re-stock the shoe with the lowest stock](#3---re-stock-the-shoe-with-the-lowest-stock)
-        * [4 - Search for a shoe using the code](#4---search-for-a-shoe-using-the-code)
-        * [5 - View stock value for each item](#5---view-stock-value-for-each-item)
-        * [6 - View the item with the highest stock](#6---view-the-item-with-the-highest-stock)
+        * [r - registering a user](#r---registering-a-user)
+        * [a - add a task](#a---add-a-task)
+        * [va - View all tasks](#va---view-all-tasks)
+        * [gr - Generate Reports](#gr---generate-reports)
+        * [vm - View my task](#vm---view-my-task)
+        * [s - Display statistics](#s---display-statistics)
     + [Credits](#credits)
 
 ### How to install
@@ -44,8 +47,6 @@ e.g.admin, adm1n
 #### Login
 When the program is initiated, user authentification is commenced. The user is asked to input their username. If the username entered is valid, they are then asked to enter their password. Otherwise, they are prompted to try again. If the password is correct, the user is shown a menu to select from. Otherwise, they are prompted to try to enter their username and password again.
 
-
-
 #### Menu
 Following successful authentification, the user is presented with a menu from which to select an option.  The menu presented to admin displays two options that are not given to other users: 'Generate Reports' and 'Statistics'. 
 
@@ -58,9 +59,11 @@ Menu for all other users:
 ##### r - registering a user
 The user must be the 'admin' in order to register a user, otherwise a message is printed informing them that this is the case. If they are the admin, they will be prompted to add the new username, the new password and to reconfirm the password.  The 'user.txt' file is updated with the new information.
 
+
 <img width="214" alt="image" src="https://user-images.githubusercontent.com/121255678/217796454-9b2e20ab-2163-4596-88ce-b9338582af41.png">
 
 If the passwords do not match, an error message is printed, asking the user to try again.
+
 
 <img width="238" alt="image" src="https://user-images.githubusercontent.com/121255678/217796977-23fa0adf-1182-496d-a580-2bc6ebddfb97.png">
 
@@ -78,6 +81,10 @@ All users may view all tasks. All the tasks in 'tasks.txt' are displayed in a us
 Only the admin user is presented with this option in their menu. 
 
 ##### vm - View my task
+
+This option displays the tasks assigned to the user that is logged in.
+
+<img width="596" alt="image" src="https://user-images.githubusercontent.com/121255678/217850905-5bff7411-6195-498e-a24f-133f13e6b303.png">
     
 ##### s - Display statistics
     
